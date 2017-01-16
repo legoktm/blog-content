@@ -17,7 +17,7 @@ Category: Sports
 	<img src="https://blog.legoktm.com/images/Colin_Kaepernick_-_San_Francisco_vs_Green_Bay_2012_crop.jpg" width="200px"/>
 	<figcaption>Kaepernick in 2012 <a href="https://commons.wikimedia.org/wiki/File:Colin_Kaepernick_-_San_Francisco_vs_Green_Bay_2012.jpg">Mike Morbeck/CC-BY-SA</a></figcaption>
 </figure>
-<p>Regardless of their support, 49ers fans have opinions on how the team is doing, mostly about 49ers quarterback Colin Kaepernick. Kaepernick protests police brutality against minorities before each game by kneeling during the national anthem. His protest placed him on the cover of TIME magazine, and ranked as the most disliked player in the NFL in a September poll conducted by E-Poll Marketing Research.</p>
+<p>Regardless of their support, 49ers fans have opinions on how the team is doing, mostly about 49ers quarterback Colin Kaepernick. Kaepernick protests police brutality against minorities before each game by kneeling during the national anthem. His protest placed him on the cover of TIME magazine, and ranked as the most disliked player in the NFL in a <a href="http://www.espn.com/nfl/story/_/id/17604958/san-francisco-49ers-qb-colin-kaepernick-most-disliked-player-nfl-according-poll-e-poll-marketing-research">September poll conducted by E-Poll Marketing Research</a>.</p>
 <p>Bejarano does not follow Kaepernick’s actions off the field, but said that on the field, Kaepernick was not getting the job done.</p>
 <p>“He does what he does, and has his own reasons,” Reach said.</p>
 <p>Self-described Raider “fanatic” Mike Nijmeh agreed, calling Kaepernick a bad quarterback.</p>
