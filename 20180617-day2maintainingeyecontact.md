@@ -14,7 +14,7 @@ Since most of our day was taken up by traveling, moving hotels, etc., we didn't 
 
 "Are real human connections dead?" "Spend a minute of uninterrupted eye contact"
 
-There were some empty cardboard seats on the floor, so we sat down, and gave it a shot. One set of people next to us looked like they were having a staring contest, and another couple on the other side were engaged in looking into each others souls to the point that it seemed like they were engaged in the most PDA I've ever seen with the least amount of touching.
+There were some empty cardboard seats on the floor, so we sat down, and gave it a shot. One set of people next to us looked like they were having a staring contest, and another couple on the other side were deeply looking into each others souls to the point that it seemed like they were engaged in the most PDA I've ever seen with the least amount of touching.
 
 We set a timer for a minute and started talking. After 10 seconds of talking, my eyes seemed to naturally gaze away - I'd have to consiously force them back. Most of the in depth conversations I have happen online, where there is no eye contact that needs maintaining - so this was pretty different. The timer for a minute went off, but since we were in the middle of our conversation, we kept going for about ten minutes (before we realized we needed to meet back up with our other friend!).
 
