@@ -1,6 +1,7 @@
 Title: Day 10: Meeting refugees and Athena
 Date: 2018-06-27 12:25:47
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism
  faculty-led program through Italy and Greece. Yes, I fell behind on blogging :/._

@@ -1,6 +1,7 @@
 Title: Building the Lego Saturn V rocket 48 years after the moon landing
 Date: 2017-07-20 21:14
 Category: Life
+Tags: lego, space, timelapse
 
 <video controls>
  <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/8/81/Building_the_Lego_Saturn_V.webm/Building_the_Lego_Saturn_V.webm.360p.webm" type="video/webm">

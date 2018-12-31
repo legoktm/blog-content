@@ -1,6 +1,7 @@
 Title: 2016 Wikimedia Developer Summit recap
 Date: 2016-01-10 05:29
 Category: MediaWiki
+Tags: devsummit, mediawiki, stickers
 
 A lot happened at the Wikimedia Developer Summit over the past week, I had a fantastic time and enjoyed getting to meet up with everyone again. Here's a quick recap:
 

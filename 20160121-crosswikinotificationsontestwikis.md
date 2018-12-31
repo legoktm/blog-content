@@ -1,6 +1,7 @@
 Title: Cross-wiki notifications on test wikis
 Date: 2016-01-21 09:57
 Category: MediaWiki
+Tags: notifications, mediawiki
 
 As was teased in this week's tech news, cross-wiki notifications are now available as a BetaFeature on testwiki and test2wiki. Simply go to [your preferences](https://test.wikipedia.org/wiki/Special:Preferences#mw-prefsection-betafeatures), enable "Enhanced notifications", trigger a notification for yourself on test2.wikipedia.org (e.g. log out and edit your talk page), and open up your notifications flyout!
 

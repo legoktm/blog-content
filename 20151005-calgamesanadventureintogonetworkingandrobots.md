@@ -1,6 +1,7 @@
 Title: CalGames 2015: An adventure into go, networking, and robots
 Date: 2015-10-05 05:46
 Category: Tech
+Tags: golang, robots, calgames, stickers
 
 This past weekend I volunteered at the 2015 CalGames tournament, which played the 2015 *FIRST* Robotics Competition game, Recycle Rush. This year CalGames had a few new things going on, and one of them was using a new field management system (FMS), called [Cheesy Arena](https://github.com/Team254/cheesy-arena). Cheesy Arena was written by Team 254 for their own offseason event and is branded as a "field management system that just works".
 

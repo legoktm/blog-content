@@ -1,6 +1,7 @@
 Title: Day 3: Return to the mountain
 Date: 2018-06-18 22:40:12
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

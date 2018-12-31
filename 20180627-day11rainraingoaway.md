@@ -1,6 +1,7 @@
 Title: Day 11: Rain rain, go away
 Date: 2018-06-27 13:19:58
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism
  faculty-led program through Italy and Greece._

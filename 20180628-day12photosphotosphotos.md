@@ -1,6 +1,7 @@
 Title: Day 12: Photos, photos, photos
 Date: 2018-06-28 09:12:38
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism
  faculty-led program through Italy and Greece._

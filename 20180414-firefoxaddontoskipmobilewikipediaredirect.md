@@ -1,6 +1,7 @@
 Title: Firefox Add-on to skip mobile Wikipedia redirect
 Date: 2018-04-14 06:12:52
 Category: MediaWiki
+Tags: firefox, wikipedia
 
 <center>[Skip Mobile Wikipedia](https://addons.mozilla.org/en-US/firefox/addon/skip-mobile-wikipedia/) on Firefox Add-ons</center>
 

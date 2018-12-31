@@ -1,6 +1,7 @@
 Title: Lets Encrypt first impressions
 Date: 2015-11-05 07:14
 Category: Tech
+Tags: letsencrypt
 
 Today I spent two hours setting up an SSL certificate with Lets Encrypt for the [wikiconferenceusa.org](https://wikiconferenceusa.org) website.
 

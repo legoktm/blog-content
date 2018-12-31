@@ -1,6 +1,7 @@
 Title: The importance of Artemis Fowl
 Date: 2018-11-29 06:01:47
 Category: MediaWiki
+Tags: wikipedia, books
 
 ![My bookshelf]({filename}/images/artemis.jpg)
 <center>Artemis Fowl, sitting right of center on my "favorite books" shelf.</center>

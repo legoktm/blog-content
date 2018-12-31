@@ -1,6 +1,7 @@
 Title: MediaWiki - powered by Debian
 Date: 2017-01-16 10:18
 Category: MediaWiki
+Tags: mediawiki, debian
 
 Barring any bugs, the last set of changes to the MediaWiki Debian package for the stretch release landed earlier this month. There are some documentation changes, and updates for changes to other, related packages. One of the other changes is the addition of a "powered by Debian" footer icon (drawn by the amazing [Isarra](https://www.mediawiki.org/wiki/User:Isarra)), right next to the default "powered by MediaWiki" one.
 

@@ -1,6 +1,7 @@
 Title: Goodbye PHPStorm, hello Atom
 Date: 2018-09-08 03:57:49
 Category: MediaWiki
+Tags: mediawiki, php, atom, freedom, phpcs
 
 I've been using the JetBrains IDE PHPStorm ever since I really got started in MediaWiki development in 2013. Its symbol analysis and autocomplete is fantastic, and the built-in inspections generally caught most coding issues while you were still writing the code.
 

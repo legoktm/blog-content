@@ -1,6 +1,7 @@
 Title: Week #11: Raided yet again
 Date: 2017-03-28 05:29
 Category: Sports
+Tags: journalism, sports
 
 If you missed the news, the Raiders are moving to Las Vegas. The Black Hole is leaving Oakland (again) for a newer, nicer, stadium in the desert. But let's talk about how we got here, and how different this is from the moving of the San Diego Chargers to Los Angeles.
 

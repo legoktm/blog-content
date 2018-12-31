@@ -1,6 +1,7 @@
 Title: I joined the FSF today
 Date: 2015-10-17 06:51
 Category: Tech
+Tags: fsf, freedom, stickers
 
 <s>Wow, two blog posts in one day.</s> Okay, I was close and just didn't finish in time.
 

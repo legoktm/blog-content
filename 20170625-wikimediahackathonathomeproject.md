@@ -1,6 +1,7 @@
 Title: Wikimedia Hackathon at home project
 Date: 2017-06-25 02:38
 Category: MediaWiki
+Tags: wmhack, ooui, phpcs, mediawiki
 
 This is the second year I haven't been able to attend the Wikimedia Hackathon due to conflicts with my school schedule (I finish at the end of June). So instead I decided I would try and accomplish a large-ish project that same weekend, but at home. I'm probably more likely to get stuff done while at home because I'm not chatting up everyone in person!
 

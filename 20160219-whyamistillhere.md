@@ -1,6 +1,7 @@
 Title: Why am I still here?
 Date: 2016-02-19 07:43
 Category: MediaWiki
+Tags: wikimedia
 
 Honestly, I'm not sure. I'm not working at the WMF for the money. And it's not because my job is fun - it stopped being fun a few months ago. I'm mostly still here because I don't really have anything else to do right now. I've been doing this for nearly 3 years now...and even though I have other plans lined up in a few months, I'm kind of a lame duck right now.
 

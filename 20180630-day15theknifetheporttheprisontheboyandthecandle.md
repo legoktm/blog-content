@@ -1,6 +1,7 @@
 Title: Day 15: The knife, the port, the prison, and the boy
 Date: 2018-06-30 22:11:31
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

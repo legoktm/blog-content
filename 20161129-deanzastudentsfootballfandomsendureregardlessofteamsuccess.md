@@ -1,6 +1,7 @@
 Title: De Anza students football fandoms endure regardless of team success
 Date: 2016-11-29 05:31
 Category: Sports
+Tags: journalism, sports
 
 <p><div class="journo-indent">
 <p>Fans of the San Francisco 49ers and Oakland Raiders at De Anza College are loyal to their teams even when they are not doing well, but do prefer to win.</p>

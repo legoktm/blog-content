@@ -1,6 +1,7 @@
 Title: Day 1: Visiting a migrant camp in Rome
 Date: 2018-06-17 19:32:03
 Category: FLP
+Tags: journalism
 
 As part of earning my journalism degree at San Jose State, we're required to study abroad. I'm currently on a faculty-led program (FLP) to Italy and Greece to interview migrants and refugees, conduct interviews, document their situation, and gain real world reporting experience. I will try to blog daily for the next three weeks...we'll see if it lasts!
 

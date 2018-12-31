@@ -1,6 +1,7 @@
 Title: MassMessage hits 1,000 commits
 Date: 2017-08-29 00:00
 Category: MediaWiki
+Tags: mediawiki, massmessage
 
 The [MassMessage MediaWiki extension](https://www.mediawiki.org/wiki/Extension:MassMessage) hit 1,000 commits today, following an update of the localization messages for the Russian language. MassMessage replaced a Toolserver bot that allowed sending a message to all Wikimedia wikis, by integrating it into MediaWiki and using the job queue. We also added some nice features like input validation and previewing. Through it, I became familiar with different internals of MediaWiki, including submitting a few core patches.
 

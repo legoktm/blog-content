@@ -1,6 +1,7 @@
 Title: Self-hosted git
 Date: 2015-10-19 07:34
 Category: Tech
+Tags: freedom, git, gogs
 
 As part of using only free software, I also started thinking about the various non-free services I am dependent upon. One of those I had already started working on replacing was Github. Github is currently the canonical source location for a lot of my various projects, including some that aren't even on my laptops.
 

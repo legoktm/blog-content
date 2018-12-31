@@ -1,6 +1,7 @@
 Title: Week #1: Who to root for this weekend
 Date: 2017-01-22 07:45
 Category: Sports
+Tags: journalism, sports
 
 For the next 10 weeks I'll be posting sports content related to Bay Area teams. I'm currently taking an intro to features writing class, and we're required to keep a blog that focuses on a specific topic. I enjoy sports a lot, so I'll be covering Bay Area sports teams (Sharks, Earthquakes, Raiders, 49ers, Warriors, etc.). I'll also be trialing using [Reddit](https://www.reddit.com/r/bloglegoktmcom/) for comments. If it works well, I'll continue using it for the rest of my blog as well. And with that, here goes:
 

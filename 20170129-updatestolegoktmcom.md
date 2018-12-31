@@ -1,6 +1,7 @@
 Title: Updates to legoktm.com
 Date: 2017-01-29 10:40
 Category: Tech
+Tags: meta, mediawiki, tor, git, freedom
 
 Over the weekend I migrated legoktm.com and associated services over to a new server. It's powered by Debian Jessie instead of the slowly aging Ubuntu Trusty. Most services were migrated with no downtime by rsync'ing content over and the updating DNS. Only git.legoktm.com had some downtime due to needing to stop the service before copying over the database.
 

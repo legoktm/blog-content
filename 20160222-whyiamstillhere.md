@@ -1,6 +1,7 @@
 Title: Why I am still here.
 Date: 2016-02-22 08:58
 Category: MediaWiki
+Tags: notifications, wikimedia
 
 This is a follow up to my probably depressing blog post on Friday, entitled "Why am I still here?" I think I figured out the answer, it's a lot of different things!
 

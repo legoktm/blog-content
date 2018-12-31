@@ -1,6 +1,7 @@
 Title: Improving quality and maintenance of election result boxes on Wikipedia
 Date: 2018-11-13 09:05:55
 Category: MediaWiki
+Tags: wikipedia
 
 I've spent a decent amount of time reading Wikipedia articles about Senate, House, and state races this week. And...there were inconsistencies. Specifically in the election box result templates:
 

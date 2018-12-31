@@ -1,6 +1,7 @@
 Title: My DebConf 17 presentation - Bringing MediaWiki back into Debian
 Date: 2017-08-26 00:00
 Category: MediaWiki
+Tags: debconf, mediawiki, debian
 
 <video controls>
  <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/4/41/Bringing_MediaWiki_back_into_Debian_-_DebConf17.webm/Bringing_MediaWiki_back_into_Debian_-_DebConf17.webm.360p.webm" type="video/webm">

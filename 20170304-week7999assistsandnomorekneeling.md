@@ -1,6 +1,7 @@
 Title: Week #7: 999 assists and no more kneeling
 Date: 2017-03-04 06:07
 Category: Sports
+Tags: journalism, sports
 
 Joe Thornton is one assist away from reaching 1,000 in his career. He's a team player - the recognition of scoring a goal doesn't matter to him, he just wants his teammates to score. And his teammates want him to achieve this milestone too, as shown by Sharks passing to Thornton and him passing back instead of them going directly for the easy empty netter.
 

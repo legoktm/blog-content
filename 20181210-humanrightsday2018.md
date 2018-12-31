@@ -1,6 +1,7 @@
 Title: Human Rights Day 2018
 Date: 2018-12-10 20:25:13
 Category: FLP
+Tags: journalism, worldpol
 
 This summer I participated in a study abroad trip where we went to Greece and Italy to report on the refugee crisis. In Catania, Sicily, they had a celebration for [World Refugee Day](https://en.wikipedia.org/wiki/World_Refugee_Day) that happened earlier in the week. One of the most memorable and overwhelming moments was when three refugees started reading the [Universal Delcaration of Human Rights](https://en.wikipedia.org/wiki/Universal_Declaration_of_Human_Rights):
 

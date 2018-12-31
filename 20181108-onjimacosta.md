@@ -1,6 +1,7 @@
 Title: On Jim Acosta
 Date: 2018-11-08 23:45:15
 Category: Press
+Tags: journalism, uspol
 
 Two weeks ago, CNN Chief White House correspondent [Jim Acosta](https://en.wikipedia.org/wiki/Jim_Acosta) came to my university and received the 2018 William Randolph Hearst Award for his work. I'm not really the biggest fan of CNN, but I've been impressed with Acosta's work, and getting to hear him speak was a real treat. He talked about what he endured at Trump rallies, and after hearing that, learning that his press pass was revoked honestly wasn't that surprising. The only way freedom of the press works is if journalists like Acosta ask the tough questions, and hold those in power responsible.
 

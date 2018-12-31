@@ -1,6 +1,7 @@
 Title: Writing a new MediaWiki tarball release script
 Date: 2018-09-24 06:07:35
 Category: MediaWiki
+Tags: mediawiki
 
 Last week's security release of MediaWiki [1.27.5 / 1.29.3 / 1.30.1 / 1.31.1](https://lists.wikimedia.org/pipermail/mediawiki-announce/2018-September/000223.html) mentioned a small hint of a new release script being used for this release. [Chad](https://www.mediawiki.org/wiki/User:%F0%9F%98%82) came up with the concept/architecture of the new script, I wrote most of the code, and [Reedy](https://en.wikipedia.org/wiki/User:Reedy) did the actual release, providing feedback on missing functionality and other feature requests.
 

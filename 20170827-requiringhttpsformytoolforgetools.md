@@ -1,6 +1,7 @@
 Title: Requiring HTTPS for my Toolforge tools
 Date: 2017-08-27 00:00
 Category: MediaWiki
+Tags: https, toolforge, python
 
 My Toolforge (formerly "Tool Labs") tools will now start requiring HTTPS, and redirecting any HTTP traffic. It's a little bit of common code for each tool, so I put it in a [shared "toolforge" library](https://wikitech.wikimedia.org/wiki/User:Legoktm/toolforge_library).
 

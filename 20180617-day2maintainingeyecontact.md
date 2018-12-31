@@ -1,6 +1,7 @@
 Title: Day 2: Maintaining eye contact
 Date: 2018-06-17 20:20:04
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

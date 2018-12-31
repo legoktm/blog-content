@@ -1,6 +1,7 @@
 Title: Week #6: Barracuda win streak is great news for the Sharks
 Date: 2017-02-24 22:27
 Category: Sports
+Tags: journalism, sports
 
 The San Jose Barracuda, the Sharks AHL affiliate team, is currently riding a 13 game winning streak, and is on top of the AHL &mdash; and that's great news for the Sharks.
 

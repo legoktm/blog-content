@@ -1,6 +1,7 @@
 Title: Week #8: Warriors are on the right path
 Date: 2017-03-12 18:38
 Category: Sports
+Tags: journalism, sports
 
 As you might have guessed due to the lack of previous coverage of the Warriors, I'm not really a basketball fan. But the Warriors are in an interesting place right now. After setting an NBA record for being the fastest team to clinch a playoff spot, Coach Kerr has started resting his starters and the Warriors have a three game losing streak. This puts the Warriors in danger of losing their first seed spot with the San Antonio Spurs only half a game behind them. 
 

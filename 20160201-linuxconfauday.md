@@ -1,6 +1,7 @@
 Title: linux.conf.au - Day 1
 Date: 2016-02-01 11:53
 Category: Tech
+Tags: linuxconfau
 
 Today was day 1 of the linux.conf.au conference in Geelong. The first two days are organized as "MiniConfs", where rooms have a general topic and presentations are scheduled by the MiniConf organizer instead of the LCA programme committee. In the morning I primarily attended the documentation/technical writing MiniConf. I was slightly surprised by how many of the presenters were from Red Hat, but I'm not surprised that they write a lot of documentation. In the morning, I liked the "[On working from home](https://linux.conf.au/schedule/30321/view_talk?day=monday)" talk, and some of the tips that different remotees shared. I particularly enjoyed the one where someone set a 3 hour expiry on their ssh keyring so they would be reminded to eat lunch while trying to log into a server.
 

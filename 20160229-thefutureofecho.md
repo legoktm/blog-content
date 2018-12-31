@@ -1,6 +1,7 @@
 Title: The future of Echo
 Date: 2016-02-29 07:29
 Category: MediaWiki
+Tags: notifications, mediawiki
 
 Echo (aka "Notifications") is the MediaWiki extension that provides a notifications framework for other features to use, as well as some "core" notification types. It's had a tumultuous history ever since it was deployed to Wikimedia wikis in 2013. To figure out where Echo should go, I think we have to look at its history first.
 

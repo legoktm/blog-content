@@ -1,6 +1,7 @@
 Title: Day 16: Lost and found
 Date: 2018-07-02 12:57:35
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece. Note: I wrote this halfway through day 17, which definitely affected what I'm writing now._
 

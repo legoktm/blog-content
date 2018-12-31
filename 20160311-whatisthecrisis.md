@@ -1,6 +1,7 @@
 Title: What is the Crisis?
 Date: 2016-03-11 08:26
 Category: MediaWiki
+Tags: wikimedia
 
 The following is my answer to a question asked of board candidates in the current [ASBS election](https://meta.wikimedia.org/wiki/Affiliate-selected_Board_seats/2016/Questions). I'd like to be able to discuss what I posted without making it look like I'm canvassing or something. You can read what other candidates said [on Meta-Wiki](https://meta.wikimedia.org/wiki/Affiliate-selected_Board_seats/2016/Questions#What_is_the_crisis.3F).
 

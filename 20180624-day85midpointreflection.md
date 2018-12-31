@@ -1,6 +1,7 @@
 Title: Day 9: Midpoint reflection
 Date: 2018-06-24 12:38:02
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism
  faculty-led program through Italy and Greece._

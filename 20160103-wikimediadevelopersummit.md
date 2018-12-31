@@ -1,6 +1,7 @@
 Title: 2016 Wikimedia Developer Summit
 Date: 2016-01-03 21:51
 Category: MediaWiki
+Tags: mediawiki, devsummit, stickers
 
 I'll be at the 2016 <s>Architecture</s> <s>MediaWiki</s> Wikimedia Developer Summit over the next week. I mainly want to talk to/nag people about:
 

@@ -1,6 +1,7 @@
 Title: My back to school free software toolkit
 Date: 2018-01-31 00:15
 Category: Tech
+Tags: freedom, fedora, journalism
 
 The 2018 spring semester started last Wednesday. I think I've set up a pretty good free software toolkit for a successful year:
 

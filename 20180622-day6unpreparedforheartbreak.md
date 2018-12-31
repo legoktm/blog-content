@@ -1,6 +1,7 @@
 Title: Day 6: Unprepared for heartbreak
 Date: 2018-06-22 13:16:15
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece. For privacy reasons, I've changed the name appearing in this post._
 

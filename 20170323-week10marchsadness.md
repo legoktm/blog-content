@@ -1,6 +1,7 @@
 Title: Week #10: March Sadness
 Date: 2017-03-23 20:28
 Category: Sports
+Tags: journalism, sports
 
 In California March Madness is really...March Sadness. The only Californian team that is still in is UCLA. UC Davis made it in but was quickly eliminated. USC and Saint Mary's both fell in the second round. Cal and Stanford didn't even make it in. At best we can root for Gonzaga, but that's barely it.
 

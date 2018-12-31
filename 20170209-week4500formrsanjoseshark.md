@@ -1,6 +1,7 @@
 Title: Week #4: 500 for Mr. San Jose Shark
 Date: 2017-02-09 20:18
 Category: Sports
+Tags: journalism, sports
 
 He did it: Patrick Marleau scored his 500th career goal. He truly is Mr. San Jose Shark.
 

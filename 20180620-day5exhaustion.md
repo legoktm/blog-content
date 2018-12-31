@@ -1,6 +1,7 @@
 Title: Day 5: Exhaustion (only a bit)
 Date: 2018-06-20 22:51:14
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

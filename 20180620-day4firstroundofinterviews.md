@@ -1,6 +1,7 @@
 Title: Day 4: First round of interviews
 Date: 2018-06-20 06:46:10
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

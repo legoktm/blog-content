@@ -1,6 +1,7 @@
 Title: Mayday Parade - Miserable at Best
 Date: 2015-10-17 02:17
 Category: Music
+Tags: music
 
 The title sums up this week pretty well.
 

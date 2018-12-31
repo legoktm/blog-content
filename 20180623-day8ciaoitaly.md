@@ -1,6 +1,7 @@
 Title: Day 8: Ciao Italy!
 Date: 2018-06-23 22:44:03
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism
  faculty-led program through Italy and Greece._

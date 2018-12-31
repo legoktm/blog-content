@@ -1,6 +1,7 @@
 Title: My letter to the Boy Scouts of America
 Date: 2017-07-26 01:51
 Category: Life
+Tags: bsa, uspol
 
 The following is a letter I just mailed to the Boy Scouts of America, following President Donald Trump's speech at the National Jamboree. I implore my fellow scouts to also contact the BSA to express their feelings.
 

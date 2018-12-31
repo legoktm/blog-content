@@ -1,6 +1,7 @@
 Title: New tool: Wikimedia APT browser
 Date: 2018-05-02 20:24:14
 Category: MediaWiki
+Tags: debian, mediawiki
 
 I've created a new tool to make it easier for humans to browse Wikimedia's APT repository: [apt.wikimedia.org](https://apt.wikimedia.org). Wikimedia's servers run Debian (Ubuntu is nearly phased out), and for the most part use the standard packages that Debian provides. But in some cases we use software that isn't in the official Debian repositories, and distribute it via our own APT repository.
 

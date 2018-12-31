@@ -1,6 +1,7 @@
 Title: git.legoktm.com registration now open
 Date: 2018-06-04 02:54:19
 Category: Tech
+Tags: git, freedom
 
 [git.legoktm.com](https://git.legoktm.com/) is now open for hosting free software projects, providing git hosting, issue trackers, and basic wiki functionality. It runs the free software [Gogs](https://gogs.io/): "a painless self-hosted Git service".
 

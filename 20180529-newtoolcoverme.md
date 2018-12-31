@@ -1,6 +1,7 @@
 Title: Introducing CoverMe: find the most called MediaWiki code lacking test coverage
 Date: 2018-05-29 04:57:10
 Category: MediaWiki
+Tags: mediawiki, coverage, toolforge
 
 <center>[CoverMe](https://tools.wmflabs.org/coverme/), hosted on Wikimedia Toolforge</center>
 

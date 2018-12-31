@@ -1,6 +1,7 @@
 Title: Introducing mwmon
 Date: 2015-10-26 05:58
 Category: MediaWiki
+Tags: mediawiki, monitoring
 
 Ocassionally some of the MediaWiki wikis I help maintain would go down, usually due to heavy traffic or a DoS of some kind. Sometimes Apache would be overloaded, or even MySQL being hammered (I'm looking at you DPL).
 

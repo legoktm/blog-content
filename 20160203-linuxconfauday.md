@@ -1,6 +1,7 @@
 Title: linux.conf.au - Day 2
 Date: 2016-02-03 02:50
 Category: Tech
+Tags: linuxconfau
 
 Day 2! I hopped around quite a bit, so I'll just talk about the talks I particuarly enjoyed. First was a talk about site reliability at Pinterest. The main things I thought that were interesting was how they have also created their own deployment tool, and that they've made it easy for the deployer to rollback their code ranges. After that was a fun talk by [Dan](dan.kiwi) about his experiences with FOIA requests in New Zealand.
 

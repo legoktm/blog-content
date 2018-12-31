@@ -1,6 +1,7 @@
 Title: Week #5: Politics and the Super Bowl – chewing a pill too big to swallow
 Date: 2017-02-17 06:21
 Category: Sports
+Tags: journalism, sports
 
 <i>For a little change, I'd like to talk about the impact of sports upon us this week. The following opinion piece was first written for La Voz, and can also be read [on their website](http://lavozdeanza.com/opinions/2017/02/15/politics-and-the-super-bowl-chewing-a-pill-too-big-to-swallow/).</i>
 

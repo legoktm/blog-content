@@ -1,6 +1,7 @@
 Title: PHPCS now voting on MediaWiki core
 Date: 2015-09-27 07:02
 Category: MediaWiki
+Tags: mediawiki, phpcs
 
 I [announced](https://lists.wikimedia.org/pipermail/wikitech-l/2015-September/083392.html) earlier today that PHP CodeSniffer is now a voting job against all submitted MediaWiki core patches. This is the result of a lot of hard work by a large number of people.
 

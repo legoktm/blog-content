@@ -1,6 +1,7 @@
 Title: Week #2: NATTY HATTY FOR PATTY
 Date: 2017-01-26 09:12
 Category: Sports
+Tags: journalism, sports
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LGSyON8HxFY" frameborder="0" allowfullscreen></iframe>
 

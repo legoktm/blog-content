@@ -1,6 +1,7 @@
 Title: Upgrading to Fedora 23
 Date: 2015-11-09 01:08
 Category: Tech
+Tags: fedora, vagrant, virtualbox
 
 I upgraded to Fedora 23 last night, and it went pretty smoothly.
 

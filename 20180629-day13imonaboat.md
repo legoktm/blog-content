@@ -1,6 +1,7 @@
 Title: Day 13: I'm on a boat
 Date: 2018-06-29 21:24:59
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

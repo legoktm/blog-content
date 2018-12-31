@@ -1,6 +1,7 @@
 Title: Day 17 & 18: Dignity and human rights
 Date: 2018-07-04 00:00:19
 Category: FLP
+Tags: journalism
 
 _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism faculty-led program through Italy and Greece._
 

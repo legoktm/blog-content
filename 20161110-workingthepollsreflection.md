@@ -1,6 +1,7 @@
 Title: Working the polls: reflection
 Date: 2016-11-10 02:44
 Category: Life
+Tags: uspol, stickers
 
 As I said earlier, I worked the polls from 6 a.m. to roughly 9:20 p.m. We had one voter come in at the nick of time at 7:59 p.m.
 

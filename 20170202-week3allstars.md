@@ -1,6 +1,7 @@
 Title: Week #3: All-Stars
 Date: 2017-02-02 06:34
 Category: Sports
+Tags: journalism, sports
 
 <figure>
 	<img src="https://i.imgur.com/meLlZLy.jpg"/>

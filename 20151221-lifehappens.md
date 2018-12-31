@@ -1,6 +1,7 @@
 Title: Life happens
 Date: 2015-12-21 07:28
 Category: Life
+Tags: letsencrypt, life, misc, notifications, mediawiki, stickers
 
 It's been a while since I last blogged, so here's a quick summary of what's been going on (totally out of order):
 
