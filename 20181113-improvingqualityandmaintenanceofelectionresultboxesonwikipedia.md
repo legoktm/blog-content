@@ -5,11 +5,11 @@ Tags: wikipedia
 
 I've spent a decent amount of time reading Wikipedia articles about Senate, House, and state races this week. And...there were inconsistencies. Specifically in the election box result templates:
 
-![Before I updated the article]({filename}/images/Screenshot_2018-11-13 California's 5th congressional district Difference between revisions - Wikipedia.png)
+![Before I updated the article]({static}/images/Screenshot_2018-11-13 California's 5th congressional district Difference between revisions - Wikipedia.png)
 
 That's what it looked like before I updated the article to use my template instead. There are a few different issues. First, Mike Thompson isn't marked as the incumbent. And second, the total number of votes is wrong - if you do the math, it adds up to 292,091. There are two more cosmetic issues: 1) the % column should go to one decimal point, and 2) the empty turnout field should be hidden since we don't have that data available.
 
-![The fixed version]({filename}/images/Screenshot_2018-11-13 California's 5th congressional district - Wikipedia fixed.png)
+![The fixed version]({static}/images/Screenshot_2018-11-13 California's 5th congressional district - Wikipedia fixed.png)
 
 That's the fixed version, that's using my template. So what's different? The main thing that most editors will notice is the amount of wikitext it took to generate my version: <code>{{election box US auto|California|2016|United States Representative District 5|Mike Thompson link=Mike Thompson (California politician)}}</code>. Compare that to [what was needed previously](https://en.wikipedia.org/w/index.php?title=California%27s_5th_congressional_district&type=revision&diff=868423606&oldid=867847666). I think it's a pretty big improvement. Oh, and if you set the year to a comma separated list, like "2012,2014,2016", it'll [generate all three boxes at once](https://en.wikipedia.org/w/index.php?title=California%27s_5th_congressional_district&type=revision&diff=868591076&oldid=868575716), so it becomes even easier to use.
 

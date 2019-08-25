@@ -3,7 +3,7 @@ Date: 2018-11-29 06:01:47
 Category: MediaWiki
 Tags: wikipedia, books
 
-![My bookshelf]({filename}/images/artemis.jpg)
+![My bookshelf]({static}/images/artemis.jpg)
 <center>Artemis Fowl, sitting right of center on my "favorite books" shelf.</center>
 
 Nearly two decades later, the [Artemis Fowl movie](https://www.youtube.com/watch?v=wXlBep9uFjI) is finally happening. It's hard for me to overstate how important Artemis Fowl has been to me. One of my friends asked me if I saw the trailer today and I pretty ecstatically said yes. [Artemis Fowl Confidential](https://www.artemis-fowl.com/), a website I registered with back in 2008, sent me an email as soon as it was released. Immediate nostalgia.

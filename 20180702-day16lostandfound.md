@@ -19,6 +19,6 @@ I didn't say anything to her about what happened, but my mom immediately noticed
 
 We talked a lot about values, relationships, and most importantly failure last night. I don't think I've exactly found where I want to go yet, but I feel much better that I've found the right track.
 
-![The sunrise]({filename}/images/maylea_sunrise.jpg)
+![The sunrise]({static}/images/maylea_sunrise.jpg)
 <center>Maylea's picture of the sunrise</center>
 

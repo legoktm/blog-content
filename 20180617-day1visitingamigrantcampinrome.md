@@ -9,6 +9,6 @@ Our trip started in Rome, Italy. Day 0 was meeting at our hotel, getting dinner 
 
 In the evening a few of us went to a rally that was protesting the murder of an immigrant, who was a union leader defending workers rights (at least, that's my understanding). There was also the issue of the anti-immigration views of the minister of internal afairs. Aside from not understanding most of what was being said since it was in Italian, I also struggled since there was no article on [Unione Sindacale di Base](https://en.wikipedia.org/wiki/Unione_Sindacale_di_Base) on Wikipedia. It would be great if someone could write one!
 
-![Sign at the rally]({filename}/images/Protest_sign_robin_hood.jpg)
+![Sign at the rally]({static}/images/Protest_sign_robin_hood.jpg)
 
 <blockquote>Take from the rich, and give to the poor!</blockquote>

@@ -7,7 +7,7 @@ _Part of a [series](https://blog.legoktm.com/category/flp.html) on my journalism
 
 Today was just a travel day - we're now in Catania, Sicily. It feels like Italy, but a lot more laid back than Rome. I think I would be pretty laid back too if I lived on an Island.
 
-![Our plane]({filename}/images/mozart_plane.jpg)
+![Our plane]({static}/images/mozart_plane.jpg)
 
 Our plane was named after Mozart? Neat.
 

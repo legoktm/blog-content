@@ -19,4 +19,4 @@ I also created a "[Kiwix team](https://tracker.debian.org/teams/kiwix-team/)" in
 
 And, thank you to the Kiwix developers for always being receptive to my bug reports and patches - and providing extra chocolate and stickers :-)
 
-![Gifts]({filename}/images/kiwix.jpg)
+![Gifts]({static}/images/kiwix.jpg)

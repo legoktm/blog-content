@@ -5,7 +5,7 @@ Tags: mediawiki, debian
 
 Barring any bugs, the last set of changes to the MediaWiki Debian package for the stretch release landed earlier this month. There are some documentation changes, and updates for changes to other, related packages. One of the other changes is the addition of a "powered by Debian" footer icon (drawn by the amazing [Isarra](https://www.mediawiki.org/wiki/User:Isarra)), right next to the default "powered by MediaWiki" one.
 
-![Powered by Debian]({filename}/images/poweredby_debian_2x.png)
+![Powered by Debian]({static}/images/poweredby_debian_2x.png)
 
 This will only be added by default to new installs of the MediaWiki package. But existing users can just copy the following code snippet into their <code>LocalSettings.php</code> file (adjust paths as necessary):
 

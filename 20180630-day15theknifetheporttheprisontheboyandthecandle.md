@@ -18,7 +18,7 @@ We got out of the car, started looking around, opening up tripods, when he came.
 
 He got out of the bulldozer, and started waving a giant butcher's knife at us, while telling us to leave. We retreated back to our van, but our local driver walked up to him, and stood her ground.
 
-![Knife guy]({filename}/images/knife_guy.jpg)
+![Knife guy]({static}/images/knife_guy.jpg)
 
 She later told us that she suspects he was a member of the far-right [Golden Dawn party](https://en.wikipedia.org/wiki/Golden_Dawn_(political_party)), since he told her that "we [Greeks] are being colonized by refugees and migrants" (translated, paraphrased).
 

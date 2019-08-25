@@ -12,7 +12,7 @@ We went to see the [Valley of the Temples](https://en.wikipedia.org/wiki/Valle_d
 
 My favorite part was probably the statue of Icarus. Yes, I know it's a modern creation, but it's still incredibly cool. And the juxtaposition of the Template of Concordia behind it was fantastic.
 
-![Icarus]({filename}/images/icarus.jpg)
+![Icarus]({static}/images/icarus.jpg)
 
 I have more things I need to write, but I need a bit more time to collect my thoughts, and it's already late. So hopefully I'll write them tomorrow (from Greece!). Ciao Italy!
 

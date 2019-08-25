@@ -11,7 +11,7 @@ OK, here goes.
 
 We got off the ferry in the morning, and took a quick drive to our hotel. It's a family run resort that is BEAUTIFUL.
 
-![View during breakfast]({filename}/images/lesvos_breakfast.jpg)
+![View during breakfast]({static}/images/lesvos_breakfast.jpg)
 <center>View during breakfast</center>
 
 It's a gorgeous resort. The staff is hella nice too. Nothing more really that we could ask for.
@@ -20,7 +20,7 @@ So then we went to a place called Mosaic in the afternoon, where refugees take d
 
 But I get the feeling that something isn't right here. We walked down and explored a bit of the city, and found one of Lesvos's dark secrets.
 
-!["Fuck Islam"]({filename}/images/fuck_islam.jpg)
+!["Fuck Islam"]({static}/images/fuck_islam.jpg)
 <center>"Fuck Islam"</center>
 
 That's less than 10 kilometers away from our hotel. It was a big deal a while back that the far-right party, Golden Dawn, [was driven off of Lesvos](https://www.pri.org/stories/2017-09-12/how-lesbos-residents-drove-far-right-golden-dawn-party-island). I do wonder what the long term effects of that will be, and whether it actually reduced racism on the island.
