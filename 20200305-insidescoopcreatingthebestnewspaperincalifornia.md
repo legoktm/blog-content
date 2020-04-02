@@ -1,7 +1,6 @@
-Title: Inside Scoop - Creating the best student newspaper in California
+Title: Inside Scoop - The best student newspaper in California
 Date: 2020-04-02 05:28:08
 Category: Press
-Status: draft
 Tags: journalism, spartandaily, insidescoop
 
 *tl;dr: The Spartan Daily picked up best student newspaper honors for the first time and had its best awards season ever. Inside Scoop is a column about the operation of the Spartan Daily, San Jose State's student newspaper.*
