@@ -5,7 +5,7 @@ Tags: wikipedia, mediawiki, wikipedia20
 
 As one of the top contributors to [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki), the free wiki engine that powers Wikipedia, I'm often asked how I got started. To celebrate Wikipedia's [20th birthday](https://20.wikipedia.org/), here's that unfortuante story.
 
-In March 2013, I was a bored college student who was spending most of his time editing Wikipedia. I reverted a lot of vandalism, and eventually began developing anti-vandalism IRC bots to allow patrollers like myself to respond to vandalism even faster than before.
+In late 2012, I was a bored college student who was spending most of his time editing Wikipedia. I reverted a lot of vandalism, and eventually began developing anti-vandalism IRC bots to allow patrollers like myself to respond to vandalism even faster than before.
 
 I had filed a [bug request](https://static-bugzilla.wikimedia.org/42758) asking for the events from our anti-abuse "[edit filter](https://en.wikipedia.org/wiki/Wikipedia:Edit_filter)" to be broadcast to the realtime IRC recent changes feed (at the time the only way to get a [continuous, live feed of edits](https://wikitech.wikimedia.org/wiki/Irc.wikimedia.org). A few months later no one had implemented it and I was annoyed.
 

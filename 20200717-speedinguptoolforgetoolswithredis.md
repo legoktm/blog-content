@@ -21,25 +21,23 @@ checker is a tool that helps Wikisource contributors quickly see the [proofread 
 
 On each page load, checker would make a database query to get the list of all available wikis, and then an additional query to get information about the selected wiki and an API query to get namespace information. This data is basically static, it would only change whenever a [new wiki is created](https://lists.wikimedia.org/pipermail/newprojects/), which is rare.
 
-<pre>
-<+bd808> I think it would be a lot faster with a tiny bit of redis cache mixed in
-</pre>
+	:::irc
+	<+bd808> I think it would be a lot faster with a tiny bit of redis cache mixed in
 
 I used the [Flask-Caching](https://pythonhosted.org/Flask-Caching/) library, which provides convenient decorators to cache the results of Python functions. Using that, adding caching was about [10 lines of code](https://github.com/legoktm/checker/commit/11c4cdd361c91a5ab7872297714a7f415fa71973).
 
 To set up the library, you'll need to configure the Cache object to use tools-redis.
 
-<pre>
-from flask import Flask
-from flask_caching import Cache
-app = Flask(__name__)
-cache = Cache(
-    app,
-    config={'CACHE_TYPE': 'redis',
-            'CACHE_REDIS_HOST': 'tools-redis',
-            'CACHE_KEY_PREFIX': 'tool-checker'}
-)
-</pre>
+	:::python3
+	from flask import Flask
+	from flask_caching import Cache
+	app = Flask(__name__)
+	cache = Cache(
+	    app,
+	    config={'CACHE_TYPE': 'redis',
+	            'CACHE_REDIS_HOST': 'tools-redis',
+	            'CACHE_KEY_PREFIX': 'tool-checker'}
+	)
 
 And then use the <code>@cache.memoize()</code> function for whatever needs caching. I set an expiry of a week so that it would pick up any changes in a reasonable time for users.
 
@@ -53,9 +51,8 @@ shorturls is a tool that displays statistics and historical data for the [w.wiki
 
 On each page load, shorturls generates an SVG chart plotting the historical counts from each dump. To generate the chart, it would need to read every single data file, over 60 as of this week. On Toolforge, the filesystem is using [NFS](https://en.wikipedia.org/wiki/Network_File_System), which allows for files to be shared across all the Toolforge servers, but it's sloooow.
 
-<pre>
-<+bd808> but this circles back to "the more you can avoid reading/writing to the NFS $HOME, the better your tool will run"
-</pre>
+	:::irc
+	<+bd808> but this circles back to "the more you can avoid reading/writing to the NFS $HOME, the better your tool will run"
  
 So to avoid reading 60+ files on each page view, I cached each data file in Redis. There's still one filesystem call to get the list of data files on disk, but so far that seems to be acceptable.
  
