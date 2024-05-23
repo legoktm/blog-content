@@ -1,7 +1,7 @@
 Title: Introducing mwseaql, a crate for MediaWiki SQL query building
 Date: 2022-10-09 03:45:00
 Category: MediaWiki
-Tags: mediawiki, mwbot-rs, rust, mysql
+Tags: mediawiki, mwbot, rust, mysql
 
 I've published a new crate, [`mwseaql`](https://docs.rs/mwseaql/), which provides typed definitions of MediaWiki's SQL tables for use with the [`sea_query`](https://docs.rs/sea-query/) query builder.
 
