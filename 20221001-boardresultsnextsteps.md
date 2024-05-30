@@ -1,7 +1,7 @@
 Title: Board Election results, next steps
 Date: 2022-10-01 05:42:50
 Category: MediaWiki
-Tagss: mediawiki, wikimedia, board, governance, wmnyc
+Tags: mediawiki, wikimedia, board, governance, wmnyc
 
 Unfortunately, I didn't make it onto the Wikimedia Foundation board, you
 can see the [full results](https://meta.wikimedia.org/wiki/Wikimedia_Foundation_elections/2022/Results/Community_voting).

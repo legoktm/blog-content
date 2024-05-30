@@ -8,15 +8,16 @@ implement and there are multiple ways to upload files and different options that
 
 The `mwapi` crate contains [most of the upload logic](https://gitlab.wikimedia.org/repos/mwbot-rs/mwbot/-/blob/e126cdc1fa69f52bfd7918365e781d3a0eb7d264/mwapi/src/upload/mod.rs) but it offers a very simple interface for uploading:
 
-	:::rust
-	pub async fn upload<P: Into<Params>>(
-	        &self,
-	        filename: &str,
-	        path: PathBuf,
-	        chunk_size: usize,
-	        ignore_warnings: bool,
-	        params: P,
-	) -> Result<String>
+```rust
+pub async fn upload<P: Into<Params>>(
+        &self,
+        filename: &str,
+        path: PathBuf,
+        chunk_size: usize,
+        ignore_warnings: bool,
+        params: P,
+) -> Result<String>
+```
 
 This fits with the rest of the `mwapi` style of simple functions that try to provide the user with maximum flexibility.
 
@@ -39,7 +40,7 @@ fail because of some HTTP-level error, you could be blocked, your edit might hav
 text you're editing, and others might be temporary and totally safe to retry.
 
 So I created one massive error type and the `mwapi_errors` crate was born, mapping all the various API error codes to the correct Rust type. The `mwapi`, `parsoid`, and `mwbot` crates all use the same `mwapi_error::Error` type
-as their error type, which is super convenient, usually. 
+as their error type, which is super convenient, usually.
 
 The problem comes that they all need to use the exact same version of `mwapi_errors`, otherwise the Error type will be different and cause super confusing compilation errors. So if we need to make a breaking change to any
 error type, all 4 crates need to issue semver-breaking releases, even if they didn't use that functionality!

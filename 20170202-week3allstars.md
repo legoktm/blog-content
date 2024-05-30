@@ -4,8 +4,8 @@ Category: Sports
 Tags: journalism, sports
 
 <figure>
-	<img src="https://i.imgur.com/meLlZLy.jpg"/>
-	<figcaption><a href="https://www.reddit.com/r/SanJoseSharks/comments/5r1rig/whats_that_la_courtesy_tumblr/">via /u/PAGinger on reddit</a></figcaption>
+    <img src="https://i.imgur.com/meLlZLy.jpg"/>
+    <figcaption><a href="https://www.reddit.com/r/SanJoseSharks/comments/5r1rig/whats_that_la_courtesy_tumblr/">via /u/PAGinger on reddit</a></figcaption>
 </figure>
 
 Last weekend was the NHL All-Star game and skills competition, with Brent Burns, Martin Jones, and Joe Pavelski representing the San Jose Sharks in Los Angeles. And to no one's surprise, they were all booed!

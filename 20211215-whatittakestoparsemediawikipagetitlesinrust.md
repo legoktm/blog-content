@@ -16,7 +16,7 @@ First, let's understand what a MediaWiki title is. A complete title looks like: 
 The optional interwiki prefix references a title on another wiki. On most wikis, looking at [Special:Interwiki](https://en.wikipedia.org/wiki/Special:Interwiki) shows the list of possible interwiki prefixes.
 
 [Namespaces](https://www.mediawiki.org/wiki/Help:Namespaces)  are used to distinguish types of pages, like articles, help pages, templates, categories, and so on. Each namespace has an accompanying "talk" namespace used for discussions related to those pages.
-Each namespace also has an internal numerical ID, a canonical English form, and if the wiki isn't in English, localized forms. Namespaces can also have aliases, for example "WP:" is an alias for the "Wikipedia:" namespace. 
+Each namespace also has an internal numerical ID, a canonical English form, and if the wiki isn't in English, localized forms. Namespaces can also have aliases, for example "WP:" is an alias for the "Wikipedia:" namespace.
 The main article namespace (ns #0) is special, because its name is the empty string.
 
 The actual title part goes through various normalization routines and is stored in the database with spaces replaced by underscores.
@@ -26,8 +26,9 @@ And finally the fragment is just a URL fragment that points to a section heading
 There are some basic validation steps that MediaWiki does. Titles can't be empty, can't have a relative path (`Foo/../Bar`), can't start with a colon, can't have magic tilde sequences (`~~~`, this syntax is used for signatures), and
 they can't contain illegal characters. This last one is where the fun begins, as MediaWiki actually allows users to configure what characters are allowed in titles:
 
-	:::php
-	$wgLegalTitleChars = " %!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+";
+```php
+$wgLegalTitleChars = " %!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+";
+```
 
 This then gets put into a regex like `[^$wgLegalTitleChars]`, which, if it matches, is an illegal character. This works fine if you're in PHP, except we're using Rust! Looking closely, you'll see that `/` is escaped, because it's used
 as the delimiter of the PHP regex, except that's an error when using the [`regex`](https://docs.rs/regex) crate. And the byte sequences of `\x80-\xFF` mean we need to operate on bytes, when we really would be fine with just matching

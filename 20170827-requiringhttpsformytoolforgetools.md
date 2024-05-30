@@ -5,17 +5,17 @@ Tags: https, toolforge, python
 
 My Toolforge (formerly "Tool Labs") tools will now start requiring HTTPS, and redirecting any HTTP traffic. It's a little bit of common code for each tool, so I put it in a [shared "toolforge" library](https://wikitech.wikimedia.org/wiki/User:Legoktm/toolforge_library).
 
-<pre>
+```python
 from flask import Flask
 import toolforge
 
 app = Flask(__name__)
 app.before_request(toolforge.redirect_to_https)
-</pre>
+```
 
 And that's it! Your tool will automatically be HTTPS-only now.
 
-<pre>
+```bash
 $ curl -I "http://tools.wmflabs.org/mwpackages/"
 HTTP/1.1 302 FOUND
 Server: nginx/1.11.13
@@ -25,5 +25,4 @@ Content-Length: 281
 Connection: keep-alive
 Location: https://tools.wmflabs.org/mwpackages/
 X-Clacks-Overhead: GNU Terry Pratchett
-</pre>
-
+```

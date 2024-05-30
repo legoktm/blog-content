@@ -20,68 +20,74 @@ want to have a webserver like Apache or nginx installed (I'll share the Apache c
 
 First, we need to download the latest copy of the Russian Wikipedia.
 
-	:::bash
-	$ wget 'https://download.kiwix.org/zim/wikipedia/wikipedia_ru_all_maxi_2022-03.zim'
+```bash
+$ wget 'https://download.kiwix.org/zim/wikipedia/wikipedia_ru_all_maxi_2022-03.zim'
+```
 
 If the download is interrupted or fails, you can use `wget -c $url` to resume it.
 
 Next let's install `kiwix-serve` and try it out. If you're using Ubuntu, I strongly recommend [enabling our Kiwix PPA](https://launchpad.net/~kiwixteam/+archive/ubuntu/release) first.
 
-	:::bash
-	$ sudo apt update
-	$ sudo apt install kiwix-tools
-	$ kiwix-serve -p 3004 wikipedia_ru_all_maxi_2022-03.zim
+```bash
+$ sudo apt update
+$ sudo apt install kiwix-tools
+$ kiwix-serve -p 3004 wikipedia_ru_all_maxi_2022-03.zim
+```
 
 At this point you should be able to visit `http://yourserver.com:3004/` and see the Russian Wikipedia. Awesome! You can use any available port, I just picked 3004.
 
 Now let's use systemd to daemonize it so it runs in the background. Create `/etc/systemd/system/kiwix-ru-wp.service` with the following:
 
-	:::ini
-	[Unit]
-	Description=Kiwix Russian Wikipedia
+```ini
+[Unit]
+Description=Kiwix Russian Wikipedia
 
-	[Service]
-	Type=simple
-	User=www-data
-	ExecStart=/usr/bin/kiwix-serve -p 3004 /path/to/wikipedia_ru_all_maxi_2022-03.zim
-	Restart=always
+[Service]
+Type=simple
+User=www-data
+ExecStart=/usr/bin/kiwix-serve -p 3004 /path/to/wikipedia_ru_all_maxi_2022-03.zim
+Restart=always
 
-	[Install]
-	WantedBy=multi-user.target
+[Install]
+WantedBy=multi-user.target
+```
 
 Now let's start it and enable it at boot:
 
-	:::bash
-	$ sudo systemctl start kiwix-ru-wp
-	$ sudo systemctl enable kiwix-ru-wp
+```bash
+$ sudo systemctl start kiwix-ru-wp
+$ sudo systemctl enable kiwix-ru-wp
+```
 
 Since we want to expose this on the public internet, we should put it behind a more established webserver and configure HTTPS.
 
 Here's the Apache httpd configuration I used:
 
-	:::apache
-	<VirtualHost *:80>
-        	ServerName ru-wp.yourserver.com
+```apache
+<VirtualHost *:80>
+        ServerName ru-wp.yourserver.com
 
-        	ServerAdmin webmaster@localhost
-        	DocumentRoot /var/www/html
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
 
-        	ErrorLog ${APACHE_LOG_DIR}/error.log
-        	CustomLog ${APACHE_LOG_DIR}/access.log combined
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-        	<Proxy *>
-                	Require all granted
-        	</Proxy>
+        <Proxy *>
+                Require all granted
+        </Proxy>
 
-	        ProxyPass / http://127.0.0.1:3004/
-	        ProxyPassReverse / http://127.0.0.1:3004/
-	</VirtualHost>
+        ProxyPass / http://127.0.0.1:3004/
+        ProxyPassReverse / http://127.0.0.1:3004/
+</VirtualHost>
+```
 
 Put that in `/etc/apache2/sites-available/kiwix-ru-wp.conf` and run:
 
-	:::bash
-	$ sudo a2ensite kiwix-ru-wp
-	$ sudo systemctl reload apache2
+```bash
+$ sudo a2ensite kiwix-ru-wp
+$ sudo systemctl reload apache2
+```
 
 Finally, I used [certbot](https://certbot.eff.org/) to enable HTTPS on that subdomain and redirect all HTTP traffic over to HTTPS. This is an interactive process that is well documented so I'm not going to go into it in detail.
 

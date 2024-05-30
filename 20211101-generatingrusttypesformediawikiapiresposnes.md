@@ -17,63 +17,65 @@ query you make, or just rely on the dynamic nature of `serde_json::Value`, which
 
 But what I've been working on in `mwapi_responses` is a third option: having a Rust macro generate the response structs based on the specified query parameters. Here's an example from the documentation:
 
-	:::rust
-	use mwapi_responses::prelude::*;
-	#[query(
-	    prop="info|revisions",
-	    inprop="url",
-	    rvprop="ids"
-	)]
-	struct Response;
+```rust
+use mwapi_responses::prelude::*;
+#[query(
+    prop="info|revisions",
+    inprop="url",
+    rvprop="ids"
+)]
+struct Response;
+```
 
 This expands to roughly:
 
-	:::rust
-	#[derive(Debug, Clone, serde::Deserialize)]
-	pub struct Response {
-	    #[serde(default)]
-	    pub batchcomplete: bool,
-	    #[serde(rename = "continue")]
-	    #[serde(default)]
-	    pub continue_: HashMap<String, String>,
-	    pub query: ResponseBody,
-	}
-	
-	#[derive(Debug, Clone, serde::Deserialize)]
-	pub struct ResponseBody {
-	    pub pages: Vec<ResponseItem>,
-	}
-	
-	#[derive(Debug, Clone, serde::Deserialize)]
-	pub struct ResponseItem {
-	    pub canonicalurl: String,
-	    pub contentmodel: String,
-	    pub editurl: String,
-	    pub fullurl: String,
-	    pub lastrevid: Option<u32>,
-	    pub length: Option<u32>,
-	    #[serde(default)]
-	    pub missing: bool,
-	    #[serde(default)]
-	    pub new: bool,
-	    pub ns: i32,
-	    pub pageid: Option<u32>,
-	    pub pagelanguage: String,
-	    pub pagelanguagedir: String,
-	    pub pagelanguagehtmlcode: String,
-	    #[serde(default)]
-	    pub redirect: bool,
-	    pub title: String,
-	    pub touched: Option<String>,
-	    #[serde(default)]
-	    pub revisions: Vec<ResponseItemrevisions>,
-	}
-	
-	#[derive(Debug, Clone, serde::Deserialize)]
-	pub struct ResponseItemrevisions {
-	    pub parentid: u32,
-	    pub revid: u32,
-	}
+```rust
+#[derive(Debug, Clone, serde::Deserialize)]
+pub struct Response {
+    #[serde(default)]
+    pub batchcomplete: bool,
+    #[serde(rename = "continue")]
+    #[serde(default)]
+    pub continue_: HashMap<String, String>,
+    pub query: ResponseBody,
+}
+
+#[derive(Debug, Clone, serde::Deserialize)]
+pub struct ResponseBody {
+    pub pages: Vec<ResponseItem>,
+}
+
+#[derive(Debug, Clone, serde::Deserialize)]
+pub struct ResponseItem {
+    pub canonicalurl: String,
+    pub contentmodel: String,
+    pub editurl: String,
+    pub fullurl: String,
+    pub lastrevid: Option<u32>,
+    pub length: Option<u32>,
+       #[serde(default)]
+    pub missing: bool,
+    #[serde(default)]
+    pub new: bool,
+    pub ns: i32,
+    pub pageid: Option<u32>,
+    pub pagelanguage: String,
+       pub pagelanguagedir: String,
+    pub pagelanguagehtmlcode: String,
+    #[serde(default)]
+    pub redirect: bool,
+    pub title: String,
+       pub touched: Option<String>,
+    #[serde(default)]
+    pub revisions: Vec<ResponseItemrevisions>,
+}
+
+#[derive(Debug, Clone, serde::Deserialize)]
+pub struct ResponseItemrevisions {
+    pub parentid: u32,
+    pub revid: u32,
+}
+```
 
 It would be a huge pain to have to write that out by hand every time, so having the macro do it is really convenient.
 
@@ -91,31 +93,34 @@ There's a big downside to this, which is mostly that we're not able to take full
 if the page is missing, then those fields will be absent. But that means we need to `.unwrap()` on every page after checking the value of the missing property. It would be much better if we had ResponseItem split into
 two using an enum, one for missing pages and the other for those that exist.
 
-	:::rust
-	enum ResponseItem {
-	    Missing(ResponseItemMissing),
-	    Exists(ResposneItemExists)
-	}
+```rust
+enum ResponseItem {
+    Missing(ResponseItemMissing),
+    Exists(ResposneItemExists)
+}
+```
 
 This would also be useful for properties like `rvprop=user|userid`. Currently setting that property results in something like:
 
-	:::rust
-	pub struct ResponseItemrevisions {
-	    #[serde(default)]
-	    pub anon: bool,
-	    pub user: Option<String>,
-	    #[serde(default)]
-	    pub userhidden: bool,
-	    pub userid: Option<u32>,
-	}
+```rust
+pub struct ResponseItemrevisions {
+    #[serde(default)]
+    pub anon: bool,
+    pub user: Option<String>,
+    #[serde(default)]
+    pub userhidden: bool,
+    pub userid: Option<u32>,
+}
+```
 
 Again, `Option<T>` is being used for the case where the user is hidden, and those properties aren't available. Instead we could have something like:
 
-	:::rust
-	enum RevisionUser {
-	    Hidden,
-	    Visible { username: String, id: u32 }	
-	}
+```rust
+enum RevisionUser {
+    Hidden,
+    Visible { username: String, id: u32 }
+}
+```
 
 (Note that anon can be figured out by looking at `id == 0`.) Again, this is much more convenient than the faithful representation of JSON.
 

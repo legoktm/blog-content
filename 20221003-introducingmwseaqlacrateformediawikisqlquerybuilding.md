@@ -9,45 +9,47 @@ It's a pretty simple implementation, there's a small Python script that parses M
 
 Here's an example of it in use from my new [rfa-voting-history tool](https://gitlab.wikimedia.org/toolforge-repos/rfa-voting-history/-/blob/d7affdf36f256a766b84e02dacbe312d9fafd233/src/query.rs):
 
-	:::rust
-	use mwseaql::{Actor, Page, Revision};
-	use sea_query::{Expr, MysqlQueryBuilder, Order, Query};
+```rust
+use mwseaql::{Actor, Page, Revision};
+use sea_query::{Expr, MysqlQueryBuilder, Order, Query};
 
-	let query = Query::select()
-	    .distinct()
-	    .column(Page::Title)
-	    .from(Revision::Table)
-	    .inner_join(
-	        Page::Table,
-	        Expr::tbl(Revision::Table, Revision::Page)
-	            .equals(Page::Table, Page::Id),
-	    )
-	    .inner_join(
-	        Actor::Table,
-	        Expr::tbl(Revision::Table, Revision::Actor)
-	            .equals(Actor::Table, Actor::Id),
-	    )
-	    .and_where(Expr::col(Page::Namespace).eq(4))
-	    .and_where(Expr::col(Page::Title).like("Requests_for_adminship/%"))
-	    .and_where(Expr::col(Actor::Name).eq(name))
-	    .order_by(Revision::Timestamp, Order::Desc)
-	    .to_string(MysqlQueryBuilder);
+let query = Query::select()
+    .distinct()
+    .column(Page::Title)
+    .from(Revision::Table)
+    .inner_join(
+        Page::Table,
+        Expr::tbl(Revision::Table, Revision::Page)
+            .equals(Page::Table, Page::Id),
+    )
+    .inner_join(
+        Actor::Table,
+        Expr::tbl(Revision::Table, Revision::Actor)
+            .equals(Actor::Table, Actor::Id),
+    )
+    .and_where(Expr::col(Page::Namespace).eq(4))
+    .and_where(Expr::col(Page::Title).like("Requests_for_adminship/%"))
+    .and_where(Expr::col(Actor::Name).eq(name))
+    .order_by(Revision::Timestamp, Order::Desc)
+    .to_string(MysqlQueryBuilder);
+```
 
 In MySQL this translates to:
 
-	:::mysql
-	SELECT
-	  DISTINCT `page_title`
-	FROM
-	  `revision`
-	  INNER JOIN `page` ON `revision`.`rev_page` = `page`.`page_id`
-	  INNER JOIN `actor` ON `revision`.`rev_actor` = `actor`.`actor_id`
-	WHERE
-	  `page_namespace` = 4
-	  AND `page_title` LIKE 'Requests_for_adminship/%'
-	  AND `actor_name` = 'Legoktm'
-	ORDER BY
-	  `rev_timestamp` DESC
+```mysql
+SELECT
+    DISTINCT `page_title`
+FROM
+    `revision`
+    INNER JOIN `page` ON `revision`.`rev_page` = `page`.`page_id`
+    INNER JOIN `actor` ON `revision`.`rev_actor` = `actor`.`actor_id`
+WHERE
+    `page_namespace` = 4
+    AND `page_title` LIKE 'Requests_for_adminship/%'
+    AND `actor_name` = 'Legoktm'
+ORDER BY
+       `rev_timestamp` DESC
+```
 
 It's really nice having type definitions for all the tables and columns. My initial impression was that the function calls were harder to read than plain SQL, but it's very quickly growing on me.
 

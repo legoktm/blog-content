@@ -11,23 +11,24 @@ In this post I'll explain the vulnerability in more detail, how Rust helped me d
 
 At the heart of this vulnerability is <code>Title::newMainPage()</code>. The function, before my patch, is as follows ([link](https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/core/+/b44af6c975d0271b3cf305441636de376b6d5995/includes/Title.php#711)):
 
-	:::php
-	public static function newMainPage( MessageLocalizer $localizer = null ) {
-		if ( $localizer ) {
-			$msg = $localizer->msg( 'mainpage' );
-		} else {
-			$msg = wfMessage( 'mainpage' );
-		}
-		$title = self::newFromText( $msg->inContentLanguage()->text() );
-		// Every page renders at least one link to the Main Page (e.g. sidebar).
-		// If the localised value is invalid, don't produce fatal errors that
-		// would make the wiki inaccessible (and hard to fix the invalid message).
-		// Gracefully fallback...
-		if ( !$title ) {
-			$title = self::newFromText( 'Main Page' );
-		}
-		return $title;
-	}
+```php
+public static function newMainPage( MessageLocalizer $localizer = null ) {
+    if ( $localizer ) {
+        $msg = $localizer->msg( 'mainpage' );
+    } else {
+        $msg = wfMessage( 'mainpage' );
+    }
+    $title = self::newFromText( $msg->inContentLanguage()->text() );
+    // Every page renders at least one link to the Main Page (e.g. sidebar).
+    // If the localised value is invalid, don't produce fatal errors that
+    // would make the wiki inaccessible (and hard to fix the invalid message).
+    // Gracefully fallback...
+    if ( !$title ) {
+        $title = self::newFromText( 'Main Page' );
+    }
+    return $title;
+}
+```
 
 It gets the contents of the "mainpage" message (editable on-wiki at MediaWiki:Mainpage), parses the contents as a page title and
 returns it. As the comment indicates, it is called on every page view and as a result has a built-in fallback if the configured
@@ -53,27 +54,28 @@ All you have to do is edit "MediaWiki:Mainpage" on your wiki to be something lik
 
 The [patch I implemented](https://gerrit.wikimedia.org/r/c/mediawiki/core/+/775992/) was pretty simple, just add a recursion guard with a hardcoded fallback:
 
-	:::diff
-	 	public static function newMainPage( MessageLocalizer $localizer = null ) {
-	+		static $recursionGuard = false;
-	+		if ( $recursionGuard ) {
-	+			// Somehow parsing the message contents has fallen back to the
-	+			// main page (bare local interwiki), so use the hardcoded
-	+			// fallback (T297571).
-	+			return self::newFromText( 'Main Page' );
-	+		}
-	 		if ( $localizer ) {
-	 			$msg = $localizer->msg( 'mainpage' );
-	 		} else {
-	 			$msg = wfMessage( 'mainpage' );
-	 		}
-	 
-	+		$recursionGuard = true;
-	 		$title = self::newFromText( $msg->inContentLanguage()->text() );
-	+		$recursionGuard = false;
-	 
-	 		// Every page renders at least one link to the Main Page (e.g. sidebar).
-	 		// If the localised value is invalid, don't produce fatal errors that
+```diff
+    public static function newMainPage( MessageLocalizer $localizer = null ) {
++        static $recursionGuard = false;
++        if ( $recursionGuard ) {
++            // Somehow parsing the message contents has fallen back to the
++            // main page (bare local interwiki), so use the hardcoded
++            // fallback (T297571).
++            return self::newFromText( 'Main Page' );
++        }
+        if ( $localizer ) {
+            $msg = $localizer->msg( 'mainpage' );
+        } else {
+            $msg = wfMessage( 'mainpage' );
+        }
+
++        $recursionGuard = true;
+        $title = self::newFromText( $msg->inContentLanguage()->text() );
++        $recursionGuard = false;
+
+        // Every page renders at least one link to the Main Page (e.g. sidebar).
+        // If the localised value is invalid, don't produce fatal errors that
+```
 
 ## Discovery
 I was mostly exaggerating when I said Rust helped me discover this bug. I previously [blogged about writing a MediaWiki title parser in Rust](https://blog.legoktm.com/2021/12/23/what-it-takes-to-parse-mediawiki-page-titlesin-rust.html), and it was while working on that I read the title parsing code in MediaWiki enough times to discover this flaw.

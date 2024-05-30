@@ -27,28 +27,30 @@ cases that don't have a period after "v" between parties. For example, it would 
 article instead of having to find it in the search results. You can see the full source code [on GitLab](https://gitlab.com/mwbot-rs/contrib/-/blob/ce4bbed79e2502de4f9268a5e48a322c6d822941/legoktm/scotus-redirects/src/main.rs). I
 omitted a bit of code to focus on the concurrency aspects.
 
-First, we get a list of all the pages in [Category:United States Supreme Court cases](https://en.wikipedia.org/wiki/Category:United_States_Supreme_Court_cases). 
+First, we get a list of all the pages in [Category:United States Supreme Court cases](https://en.wikipedia.org/wiki/Category:United_States_Supreme_Court_cases).
 
-	:::rust
-	let mut gen = categorymembers_recursive(
-	    &bot,
-	    "Category:United States Supreme Court cases",
-	);
+```rust
+let mut gen = categorymembers_recursive(
+    &bot,
+    "Category:United States Supreme Court cases",
+);
+```
 
 Under the hood, this uses an [API generator](https://www.mediawiki.org/wiki/API:Query#Generators), which allows us to get the same `prop=info` metadata in the same request we are fetching the list of pages. This metadata is stored in
-the `Page` instance that's yielded by the page generator. Now calls to `page.is_redirect()` can be answered immediately without needing to make a one-off HTTP request (normally it would be lazy-loaded). 
+the `Page` instance that's yielded by the page generator. Now calls to `page.is_redirect()` can be answered immediately without needing to make a one-off HTTP request (normally it would be lazy-loaded).
 
 The next part is to spawn a Tokio task for each page.
 
-	:::rust
-	let mut handles = vec![];
-	while let Some(page) = gen.recv().await {
-	    let page = page?;
-	    let bot = bot.clone();
-	    handles.push(tokio::spawn(
-	        async move { handle_page(&bot, page).await },
-	    ));
-	}
+```rust
+let mut handles = vec![];
+while let Some(page) = gen.recv().await {
+    let page = page?;
+    let bot = bot.clone();
+    handles.push(tokio::spawn(
+        async move { handle_page(&bot, page).await },
+    ));
+}
+```
 
 The `mwbot::Bot` type keeps all data wrapped in `Arc<T>`, which makes it cheap to clone since we're not actually cloning the underlying data. We keep track of each `JoinHandle` returned by `tokio::spawn()` so once each task is spawned,
 we can `await` on each one so the program only exits once all threads have been processed. We can also access the return value of each task, which in this case is `Result<bool>`, where the boolean indicates whether the redirect was
@@ -56,28 +58,30 @@ created or not, allowing us to print a closing message saying how many new redir
 
 Now let's look at what each task does. The next three code blocks make up our `handle_page` function.
 
-	:::rust
-	// Should not create if it's a redirect
-	if page.is_redirect().await? {
-	    println!("{} is redirect", page.title());
-	    return Ok(false);
-	}
+```rust
+// Should not create if it's a redirect
+if page.is_redirect().await? {
+    println!("{} is redirect", page.title());
+    return Ok(false);
+}
+```
 
 First we check that the page we just got is not a redirect itself, as we don't want to create a redirect to another redirect. As mentioned earlier, the `page.is_redirect()` call does not incur a HTTP request to the API since we
 already preloaded that information.
 
-	:::rust
-	let new = page.title().replace(" v. ", " v ");
-	let newpage = bot.page(&new)?;
-	// Create if it doesn't exist
-	let create = match newpage.html().await {
-	    Ok(_) => false,
-	    Err(Error::PageDoesNotExist(_)) => true,
-	    Err(err) => return Err(err.into()),
-	}
-	if !create {
-	    return Ok(false);
-	}
+```rust
+let new = page.title().replace(" v. ", " v ");
+let newpage = bot.page(&new)?;
+// Create if it doesn't exist
+let create = match newpage.html().await {
+    Ok(_) => false,
+    Err(Error::PageDoesNotExist(_)) => true,
+    Err(err) => return Err(err.into()),
+}
+if !create {
+    return Ok(false);
+}
+````
 
 Now we create a new `Page` instance that has the same title, but with the period removed. We need to make sure this page doesn't exist before we try to create it. We could use the `newpage.exists()` function, except it will make a
 HTTP request to the Action API since the page doesn't have that metadata preloaded. Even worse, the Action API limits us to a concurrency of 1, so any task that has made it this far now loses the concurrency benefit we were hoping for.
@@ -85,13 +89,14 @@ HTTP request to the Action API since the page doesn't have that metadata preload
 So, we'll just cheat a bit by making a request for the page's HTML, served by the REST API that allows for the 200 req/s concurrency. We throw away the actual HTML response, but it's not that wasteful given that in most cases we either
 get a very small HTML response representing the redirect or we get a 404, indicating the page doesn't exist. [Issue #49](https://gitlab.com/mwbot-rs/mwbot/-/issues/49) proposes using a HEAD request to avoid that waste.
 
-	:::rust
-	let target = page.title();
-	// Build the new HTML to be saved
-	let code = { ... };
-	println!("Redirecting [[{}]] to [[{}]]", &new, target);
-	newpage.save(code, ...).await?;
-	Ok(true)
+```rust
+let target = page.title();
+// Build the new HTML to be saved
+let code = { ... };
+println!("Redirecting [[{}]] to [[{}]]", &new, target);
+newpage.save(code, ...).await?;
+Ok(true)
+```
 
 Finally we build the HTML to be saved and then save the page. The `newpage.save()` function calls the API with `action=edit` to save the page, which limits us to a concurrency of 1. That's not actually a problem here, as by Wikipedia
 policy, bots generally are supposed to pause 10 seconds in between edits if there is no urgency to the edits (in constrast to an anti-vandalism bot wants to bad revert edits as fast as possible). This is mostly to avoid cluttering up the
