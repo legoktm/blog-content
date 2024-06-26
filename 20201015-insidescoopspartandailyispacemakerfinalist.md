@@ -60,7 +60,7 @@ All that said, when the list of [2020 Newspaper Pacemaker finalists](https://stu
 
 And then I scrolled a little farther and saw the familiar face of Lindsey Graham staring back at me, from my column about the EARN IT Act.
 
-<center>![Spartan Daily is a Pacemaker finalist]({static}/images/sd-pacemaker-finalist.png)</center>
+![Spartan Daily is a Pacemaker finalist]({static}/images/sd-pacemaker-finalist.png)
 
 Unbelievable. 
 

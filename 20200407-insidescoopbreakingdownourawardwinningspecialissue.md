@@ -71,23 +71,17 @@ Somehow a faint gray border was accidentally set on the text box of Olivia's sto
 
 It's not productive for us to blame any specific person given the number of eyes that went over it and didn't notice (also blaming people in general is a terrible practice). But it's still frustrating enough that I don't really have any comments on the story itself. For a later special paper I had one of our editors go through all of the pages again before we sent them to the printer to double check stuff like this.
 
-<center>
 ![Satire, page 7]({static}/images/ffn9_satire.png)
-</center>
 
 This story was not planned. I don't remember where we went wrong, but when we were laying out which story was going to go on each page, we ended up short one story in the opinion section. While normally I would have preferred a staff writer to fill in the gap, because we were very short on time Jonathan, the opinion editor, wrote the story himself. Plus he likes satire so it was a great fit.
 
 I would also like everyone to know that there is a Wikipedia article titled ['No Way To Prevent This,' Says Only Nation Where This Regularly Happens](https://en.wikipedia.org/wiki/%27No_Way_To_Prevent_This,%27_Says_Only_Nation_Where_This_Regularly_Happens) about The Onion stories with the same name.
 
-<center>
 ![Editorial, page 10]({static}/images/ffn10_editorial.png)
-</center>
 
 Before I get into discussing this page, I want to share an excerpt that explains my position on editorials from one of my favorite books, [The Landry News](https://en.wikipedia.org/wiki/The_Landry_News).
 
-<center>
 ![Editorials are the heart of a newspaper, from The Landry News]({static}/images/ffn11_landry.png)
-</center>
 
 (Maybe another time I'll write about how much I love editorials.)
 
