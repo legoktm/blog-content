@@ -3,7 +3,10 @@ Date: 2018-05-29 04:57:10
 Category: MediaWiki
 Tags: mediawiki, coverage, toolforge
 
-<center>[CoverMe](https://tools.wmflabs.org/coverme/), hosted on Wikimedia Toolforge</center>
+<center>
+
+[CoverMe](https://tools.wmflabs.org/coverme/), hosted on Wikimedia Toolforge
+</center>
 
 Test coverage is a useful metric, but it can be difficult to figure out exactly where to start. That's where CoverMe is useful - it sorts functions by how often they're called on Wikimedia production servers, and then displays their coverage status.
 

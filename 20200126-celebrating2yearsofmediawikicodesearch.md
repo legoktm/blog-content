@@ -4,6 +4,7 @@ Category: MediaWiki
 Tags: codesearch, mediawiki, puppet
 
 <center>
+
 ![MediaWiki codesearch logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/MediaWiki_codesearch_logo.svg/200px-MediaWiki_codesearch_logo.svg.png)
 </center>
 
