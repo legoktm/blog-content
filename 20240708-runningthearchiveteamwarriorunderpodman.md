@@ -35,8 +35,8 @@ Environment=CONCURRENT_ITEMS=4
 AutoUpdate=registry
 
 [Service]
-# Restart service when needed
-Restart=always
+Restart=on-failure
+RestartSec=30
 # Extend Timeout to allow time to pull the image
 TimeoutStartSec=180
 
@@ -62,3 +62,6 @@ since I do want to explicitly shutdown in some cases.
 
 P.S. I also have a infrequently updated [Free bandwidth](https://legoktm.com/view/Free_bandwidth)
 wiki page that contains other suggestions for how to use your internet connection for good.
+
+Update (2024-07-14): I changed the restart options to `Restart=on-failure` and `RestartSec=30`, which fixes the issue with restarting immediately
+after a graceful shutdown and correctly restarting if it starts up before networking is ready.
