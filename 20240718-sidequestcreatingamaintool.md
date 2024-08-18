@@ -1,7 +1,7 @@
 Title: Side quest: creating a "main" tool
 Date: 2024-07-18 00:57:56
 Category: Tech
-Tags: rust, main, git, llm, sidequest
+Tags: rust, main, git, llm, sidequest, claude
 
 I like Simon Willison's framing of using large language models (aka LLMs, aka "AI")
 to enable [side quests](https://simonwillison.net/2024/Mar/22/claude-and-chatgpt-case-study/)
