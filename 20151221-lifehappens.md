@@ -6,7 +6,7 @@ Tags: letsencrypt, life, misc, notifications, mediawiki, stickers
 It's been a while since I last blogged, so here's a quick summary of what's been going on (totally out of order):
 
 * Joined the [Let's Encrypt beta](https://letsencrypt.org/), all of legoktm.com is now HTTPS-only. Same with the [Wikimedia DC farm](https://wikimediadc.org/wiki/Home). Uncyclomedia is currently transitioning.
-* Reached [level 8](https://twitter.com/legoktm/status/670017347416031232) as an Ingress agent.
+* Reached [level 8](/2015/11/26/ingress-level-8.html) as an Ingress agent.
 * Had my second [spontaneous pneumothorax](https://en.wikipedia.org/wiki/Pneumothorax) in the right lung :-(.
 * Helping out with building [PAWS](https://www.mediawiki.org/wiki/Manual:Pywikibot/PAWS).
 * Mentoring high schoolers as part of [GCI](https://www.mediawiki.org/wiki/Google_Code-in_2015). Somehow I ended up mentoring tasks with both Wikimedia and MusicBrainz.
@@ -18,4 +18,3 @@ It's been a while since I last blogged, so here's a quick summary of what's been
 * [Presented](http://604robotics.com/resources/awards/) at the WRRF workshops about FRC Awards, and how they're easier to win than regionals.
 
 Also, new laptop stickers ^.^
-

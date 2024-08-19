@@ -16,5 +16,4 @@ A lot happened at the Wikimedia Developer Summit over the past week, I had a fan
 
 I hacked on quite a few different projects, more on that later :)
 
-And, new [laptop](https://twitter.com/legoktm/status/684158295339188224) [stickers](https://twitter.com/legoktm/status/684410318873735168) ^.^
-
+And, new [laptop](/2016/01/04/new-scap-laptop-sticker.html) [stickers](/2016/01/05/you-can-never-have-too-many-wikidata-stickers.html) ^.^

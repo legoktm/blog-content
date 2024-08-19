@@ -33,7 +33,7 @@ My one regret is that the quote, "Honestly, it is a fire hose of shit," didn't m
 
 ![ICE, page 2]({static}/images/ffn3_ice.png)
 
-The next story about false ICE rumors spreading over Twitter was easily the most important story in this entire issue. As seen in the screenshot (or on [Twitter itself](https://twitter.com/jessiicake_love/status/1110998377532018688)), people falsely claimed on Twitter that ICE was on the SJSU campus, obviously scaring undocumented students. It's trivial to [find](https://twitter.com/American_Plebe/status/1110999038478827520) [other](https://twitter.com/moraya_allred/status/1111010308032626688) tweets that falsely claim this too.
+The next story about false ICE rumors spreading over Twitter was easily the most important story in this entire issue. As seen in the screenshot (or on [Twitter itself](https://twitter.com/jessiicake_love/status/1110998377532018688)), people falsely claimed on Twitter that ICE was on the SJSU campus, obviously scaring undocumented students. It's trivial to [find](https://twitter.com/American_Plebe/status/1110999038478827520) [other](https://web.archive.org/web/20190327210113/https://twitter.com/moraya_allred/status/1111010308032626688) tweets that falsely claim this too.
 
 There's no better case study for "fake news" than something concerning our own campus. Given that the Spartan Daily already covered the incident when the rumors first spread, Vicente's story retells the tale from a different angle: focusing on how the university fought the "fake news". This is the theme that all the remaining stories keep in mind - how do we as individuals and as a society fight "fake news". I do wish that we could have had an interview with someone who actually spread the rumors on social media though.
 
@@ -93,7 +93,7 @@ For laying out the page, Melody really came in clutch and did a great job. We we
 
 Overall, I do wonder how much this issue resonated with our primary audience, San Jose State students. I think we did well among one of our secondary audiences, SJSU professors, but that doesn't surprise me given this is a topic many of them are already interested in.
 
-We tried to push the principle of doing things early and planning to give a better result and I think it mostly worked. Nearly all of the content finished going through the entire editing process by the weekend, which really helped Marci put together skeletons/templates of each page for editors to just paste in the final content. This allowed us to spend more time making minor tweaks to get the details right rather than having to just settle for the basics (of course, some stuff still slipped through - "founding founders" still gets to me). 
+We tried to push the principle of doing things early and planning to give a better result and I think it mostly worked. Nearly all of the content finished going through the entire editing process by the weekend, which really helped Marci put together skeletons/templates of each page for editors to just paste in the final content. This allowed us to spend more time making minor tweaks to get the details right rather than having to just settle for the basics (of course, some stuff still slipped through - "founding founders" still gets to me).
 
 One oddity of this paper was that there was only a single image in the entire issue (the teaser photo of Kevin Durant on the bottom right of Page 1). "Fake news" isn't really a photograph-able subject I suppose.
 

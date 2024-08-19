@@ -15,5 +15,4 @@ I'll be at the 2016 <s>Architecture</s> <s>MediaWiki</s> Wikimedia Developer Sum
 
 I've also proposed a [session about shadow namespaces](https://phabricator.wikimedia.org/T115762), which I'll probably discuss informally with people or in an unconference slot.
 
-And in case you missed it, I got a [new laptop sticker](https://twitter.com/legoktm/status/683546444914032641) ^.^
-
+And in case you missed it, I got a [new laptop sticker](/2016/01/03/new-shark-sticker.html) ^.^

@@ -17,8 +17,6 @@ We also brought back the crime blotter, which should be a regular feature going 
 
 #### Thursday: out at 1:23a.m.
 
-One of the projects that we had discussed doing over the summer was a special sports preview, inspired by other college publications like the Daily Orange. We picked women's soccer early on because they've been on fire lately, and won the Mountain West championship last year. I'm going to write a separate post about the process we went through to put it together, but to keep it short, I'm rather pleased with how it came out, given the constraints and challenges we faced. [And we're not the only ones who think that!](https://twitter.com/SjsuTuite/status/1169796832865611777)
+One of the projects that we had discussed doing over the summer was a special sports preview, inspired by other college publications like the Daily Orange. We picked women's soccer early on because they've been on fire lately, and won the Mountain West championship last year. I'm going to write a separate post about the process we went through to put it together, but to keep it short, I'm rather pleased with how it came out, given the constraints and challenges we faced. [And we're not the only ones who think that!](https://web.archive.org/web/20190921002215/https://twitter.com/SjsuTuite/status/1169796832865611777)
 
 But because much of my attention that night was focused on finishing the soccer special, I don't think the rest of the paper was as high quality as it could have been. Some of our stories were off target, and didn't match the original pitch or even the headline. One thing I noticed last semester is that our Opinion "counterpoints" features need to be written for each other to have a good debate. These two were written independently, and totally ignore each other. That's not a problem with any of the writers, but how we're pushing the packaging.
-
-
